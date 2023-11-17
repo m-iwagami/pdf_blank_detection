@@ -45,7 +45,7 @@ class DetectPixels:
         path = askdirectory(title = "Select a folder")
         walker = os.walk(path)
 
-        outlet = pd.DataFrame(columns=['File Name', 'WhitePix', 'Result', 'Dir_name' ])
+        outlet = pd.DataFrame(columns=['File Name', 'WhitePix', 'Result', 'Dir_name'])
         dict_list = []
         for folder, subfoler, files in walker:
             for file in files:
@@ -57,11 +57,11 @@ class DetectPixels:
                 image_gray = self.read_cvt_gray_image(filepath)
                 percentage = self.calculate_white_pixel(image_gray)
                 result = self.detect_blank_page(percentage)
-                row_dict = {'File Name': filename, 'WhitePix': percentage, "Result" : result, "Folder Name" : dirname}
+                row_dict = {'FileName': filename, 'WhitePix': percentage, "Result" : result, "FolderName" : dirname}
                 dict_list.append(row_dict)
         outlet = pd.DataFrame.from_dict(dict_list)    
-        #outlet.to_string(save_filename)
-        outlet.to_csv(save_filename)
+        outlet.to_string(save_filename)
+        #outlet.to_csv(save_filename)
 
 
         
