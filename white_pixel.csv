@@ -1,0 +1,14 @@
+                     File Name    WhitePix  Result Folder Name
+0      non-text-searchable.jpg   95.948520   False       dir_2
+1   Free_Test_Data_1MB_PDF.jpg  100.000000    True       dir_2
+2                     test.jpg   69.058111   False       dir_2
+3                  letters.jpg   85.139489   False       dir_2
+4             white_holes.jpeg    0.007933   False       dir_2
+5                  barcode.jpg   93.217440   False       dir_2
+6                  picture.jpg   54.353987   False       dir_2
+7               ultrasound.jpg    9.415287   False       dir_2
+8      non-text-searchable.jpg   95.948520   False       dir_1
+9   Free_Test_Data_1MB_PDF.jpg  100.000000    True       dir_1
+10                 letters.jpg   85.139489   False       dir_1
+11                 barcode.jpg   93.217440   False       dir_1
+12                 picture.jpg   54.353987   False       dir_1
