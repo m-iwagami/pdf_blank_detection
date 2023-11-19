@@ -60,8 +60,8 @@ class DetectPixels:
                 row_dict = {'FileName': filename, 'WhitePix': percentage, "Result" : result, "FolderName" : dirname}
                 dict_list.append(row_dict)
         outlet = pd.DataFrame.from_dict(dict_list)    
-        outlet.to_string(save_filename)
-        #outlet.to_csv(save_filename)
+        #outlet.to_string(save_filename)
+        outlet.to_csv(save_filename)
 
 
         
